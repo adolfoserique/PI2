@@ -81,7 +81,7 @@ ISR(PCINT0_vect)                                       // pin change interruptio
     else {
       
       i=numBits;
-      PORTB &= ~(1 << MISO_SPI);                         // disble pin
+      PORTB &= ~(1 << MISO_SPI);                         // disable pin
       
     }        
 }
