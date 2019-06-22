@@ -51,7 +51,7 @@ void loop() {
   
   }
 
-      //-------SPI interupt routine to send 1 byte (MODE 1)-------//
+      //-------SPI interupt routine (MODE 1)-------//
 
 ISR(PCINT0_vect)                                       // pin change interruption calls => 1°: CS goes high to low; 2°: SCLK goes low to high; 3°: SCLK goes high to low ...; 17°: SCLK goes high to low; 18°: CS goes low to high  
 {
