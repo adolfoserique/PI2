@@ -39,22 +39,14 @@ void setup() {
 
 }
 
-
-
 void loop() {
   
-
   }
-
-
 
       //-------SPI interupt routine (MODE 1)-------//
 
 
-
-ISR(PCINT0_vect)                                       // pin change interruption calls => 1°: CS goes high to low; 2°: SCLK goes low to high; 3°: SCLK goes high to low ...; 17°: SCLK goes high to low; 18°: CS goes low to high  
-
-{
+ISR(PCINT0_vect){                                       // pin change interruption calls => 1°: CS goes high to low; 2°: SCLK goes low to high; 3°: SCLK goes high to low ...; 17°: SCLK goes high to low; 18°: CS goes low to high  
 
     CS_STATE = (PINB & (1<<CS_SPI));                   // check CS state 
     SCLK_STATE = (PINB & (1<<SCLK_SPI));               // check SCLK state
@@ -102,4 +94,4 @@ ISR(PCINT0_vect)                                       // pin change interruptio
 
      }  
    }        
-}
+ }
