@@ -1,9 +1,7 @@
 // SPI mode: CPOL = 0; CPHA = 1;
 
-
 #include <VL53L0X.h>
 #include <Wire.h> 
-
 
 const int CS_SPI = 4;                                  // set CS SPI to pin PB4
 const int SCLK_SPI = 3;                                // set SCLK SPI to pin PB3
