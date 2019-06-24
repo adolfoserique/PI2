@@ -41,7 +41,7 @@ void setup() {
 
 void loop() {
   
-  }
+}
 
       //-------SPI interupt routine (MODE 1)-------//
 
