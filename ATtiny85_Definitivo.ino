@@ -1,9 +1,7 @@
 // SPI mode: CPOL = 0; CPHA = 1;
 
-
 #include <VL53L0X.h>
 #include <Wire.h> 
-
 
 #define CS_SPI      PB4                               // set CS SPI to pin PB4
 #define SCLK_SPI    PB3                               // set SCLK SPI to pin PB3
@@ -41,8 +39,6 @@ void setup() {
     PCMSK = 0b00111000;                                // turn on interrupts on pins PB3, PB4 and PB5
 
 }
-
-
 
 void loop() {
   
