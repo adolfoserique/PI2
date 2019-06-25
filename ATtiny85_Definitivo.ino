@@ -84,7 +84,7 @@ ISR(PCINT0_vect){                                       // pin change interrupti
 
       if (SYNC_STATE == 0){
 
-       num = num_last; // test
+       num = num_last; // receive last value
 
      }
      else {
