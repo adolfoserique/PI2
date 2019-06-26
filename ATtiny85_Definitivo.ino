@@ -85,8 +85,8 @@ ISR(PCINT0_vect)                                       // pin change interruptio
       }
       else {
 
-       num = 170;  //teste
-       //num = sensor.readRangeSingleMillimeters();     // read sensor
+       //num = 170;  //teste
+       num = sensor.readRangeSingleMillimeters();     // read sensor
        num_last = num;
 
       }  
