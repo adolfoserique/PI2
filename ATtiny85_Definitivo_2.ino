@@ -74,7 +74,7 @@ void loop() {
       }
       else {
 
-        //num = random(40,255);  //teste
+        //num = 170;  //teste
        num = sensor.readRangeSingleMillimeters();     // read sensor
        num_last = num;
 
