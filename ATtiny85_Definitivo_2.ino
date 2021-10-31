@@ -46,7 +46,7 @@ void loop() {
                        PORTB &= ~(1 << MISO_SPI);  //Set MISO as LOW
                         break;
                     case 1:
-                        PORTB |= (1 << MISO_SPI);  // Set MISO as HIGH
+                        PORTB |= (1 << MISO_SPI);  //Set MISO as HIGH
                         break;
                 }
             d = 1;
